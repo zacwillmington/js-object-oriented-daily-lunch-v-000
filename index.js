@@ -82,7 +82,7 @@ class Meal {
         return store.meals.sort(function(a, b){
             return b.price - a.price;
         });
-        
+
     }
 }
 
@@ -125,6 +125,16 @@ class Customer {
             });
         });
         return mealz;
+    }
+
+    customersMeals(){
+        return this.deliveries().forEach(function(delivery){
+            return delivery.meal();
+        });
+    }
+
+    static totalSpent(){
+        console.log(customersMeals());
     }
 
 }
