@@ -131,13 +131,14 @@ class Customer {
 
         const c = []
         this.deliveries().forEach(function(delivery){
+            debugger;
             c.push(delivery.meal());
         });
         return c;
     }
 
     static totalSpent(){
-
+        debugger;
         console.log(this.customersMeals());
     }
 
