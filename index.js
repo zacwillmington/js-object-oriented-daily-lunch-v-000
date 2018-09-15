@@ -128,7 +128,8 @@ class Customer {
     }
 
     customersMeals(){
-        return this.deliveries().forEach(function(delivery){
+        this.deliveries().forEach(function(delivery){
+            debugger;
              return delivery.meal();
         });
     }
