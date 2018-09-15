@@ -137,7 +137,7 @@ class Customer {
     }
 
     totalSpent(){
-        total = 0
+        let total = 0
         return this.customersMeals().map(function(meal){
             total = meal.price++
         });
