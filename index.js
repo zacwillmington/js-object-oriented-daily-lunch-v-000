@@ -41,7 +41,7 @@ class Neighborhood {
     meals(){
         const allMeals = [...this.allMealsNotUnique()];
         const uniqueMeals = [...(new Set(allMeals.map(function({ id }){
-                                 return id;
+                                 return { id };
                             }
                         )))];
                         debugger;
