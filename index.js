@@ -79,9 +79,10 @@ class Meal {
     }
 
     static byPrice() {
-        return store.meals.sort(function(a, b){
+        const p = store.meals.sort(function(a, b){
             a.price - b.price;
         });
+        console.log(p);
     }
 }
 
