@@ -138,7 +138,7 @@ class Customer {
 
     totalSpent(){
         let total = 0
-        return this.customersMeals().forEach(function(meal){
+        this.customersMeals().forEach(function(meal){
          debugger;
             total = total + meal.price;
         });
