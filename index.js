@@ -44,7 +44,7 @@ class Neighborhood {
                                  return { id };
                             }
                         )))];
-                        
+
         return uniqueMeals;
     }
 }
@@ -106,7 +106,6 @@ class Customer {
     meals() {
         // Find neighborhood
         const neighborhood = this.customerNeighborhood();
-        debugger;
         //then call neighborhood.meals() will return the correct meals.
         console.log(neighborhood.meals());
         // const newInstance = new getCustomersMeals(this.customerNeighborhood().meals());
