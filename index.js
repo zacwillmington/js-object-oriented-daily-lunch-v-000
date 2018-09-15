@@ -117,7 +117,7 @@ class Customer {
                  if (meal1.id === meal2){
                      debugger;
 
-                     mealz.push(meal);
+                     mealz.push(meal1);
                  }
             });
         });
