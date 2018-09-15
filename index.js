@@ -44,7 +44,7 @@ class Neighborhood {
                                  return id;
                             }
                         )))];
-                        debgger;
+                        debugger;
         return uniqueMeals;
     }
 }
