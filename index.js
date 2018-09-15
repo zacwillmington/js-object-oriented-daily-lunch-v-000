@@ -114,9 +114,9 @@ class Customer {
 
             neighborhood.meals().filter(function(meal2){
 
-                 if (meal1.id === meal2.id){
+                 if (meal1.id === meal2){
                      debugger;
-                     
+
                      mealz.push(meal);
                  }
             });
