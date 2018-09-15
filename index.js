@@ -128,15 +128,14 @@ class Customer {
     }
 
     customersMeals(){
-        const meals = this.deliveries().forEach(function(delivery){
-            debugger;
-            return delivery.meal();
+        return this.deliveries().forEach(function(delivery){
+             delivery.meal();
         });
-        return meals;
     }
 
     static totalSpent(){
-        console.log(customersMeals());
+
+        console.log(this.customersMeals());
     }
 
 }
