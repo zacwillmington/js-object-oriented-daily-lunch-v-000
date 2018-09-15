@@ -130,7 +130,7 @@ class Customer {
     customersMeals(){
         this.deliveries().forEach(function(delivery){
             debugger;
-             return delivery.meal();
+              delivery.meal();
         });
     }
 
