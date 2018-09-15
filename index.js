@@ -137,7 +137,7 @@ class Customer {
         return c;
     }
 
-    static totalSpent(){
+    totalSpent(){
         debugger;
         console.log(this.customersMeals());
     }
