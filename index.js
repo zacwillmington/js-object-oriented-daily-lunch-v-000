@@ -107,7 +107,13 @@ class Customer {
         // Find neighborhood
         const neighborhood = this.customerNeighborhood();
         //then call neighborhood.meals() will return the correct meals.
-        console.log(neighborhood.meals());
+        // console.log(neighborhood.meals());
+        
+        store.meals.forEach(function (meal1) {
+            return neighborhood.meals().filter(function(meal2){
+                return meal1.id === meal2.id
+            });
+        });
         // const newInstance = new getCustomersMeals(this.customerNeighborhood().meals());
         // console.log(newInstance.meals());
     }
