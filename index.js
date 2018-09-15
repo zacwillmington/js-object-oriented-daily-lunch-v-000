@@ -70,7 +70,7 @@ class Meal {
 
     customers() {
         return this.deliveries.filter(function (delivery){
-        
+
             }.bind(this)
         );
     }
@@ -103,11 +103,12 @@ class Customer {
     }
 
     meals() {
-        // Find neighborhood 
+        // Find neighborhood
         // console.log(this.customerNeighborhood());
-        
+        const neighborhood = this.customerNeighborhood();
+
         //then call neighborhood.meals() will return the correct meals.
-        
+
         // const newInstance = new getCustomersMeals(this.customerNeighborhood().meals());
         // console.log(newInstance.meals());
     }
