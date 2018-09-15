@@ -70,10 +70,12 @@ class Meal {
 
 
     customers() {
-        return this.deliveries().filter(function (delivery){
-
-            }.bind(this)
+        const c = []
+        this.deliveries().forEach(function (delivery){
+                c.push(delivery.customer());
+            }
         );
+        return c;
     }
 }
 
