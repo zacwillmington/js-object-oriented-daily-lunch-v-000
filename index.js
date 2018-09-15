@@ -70,7 +70,7 @@ class Meal {
 
 
     customers() {
-        return this.deliveries.filter(function (delivery){
+        return this.deliveries().filter(function (delivery){
 
             }.bind(this)
         );
