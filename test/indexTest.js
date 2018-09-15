@@ -193,7 +193,7 @@ describe('index.js', () => {
       describe('meals()', () => {
         it('returns all unique meals a customer has ordered', () => {
             debugger;
-          expect(guy.meals()).to.deep.equal([friedCheesecake, macAndCheese, macAndCheese]);
+          expect(guy.meals()).to.deep.equal([friedCheesecake, macAndCheese]);
         });
       });
     });
