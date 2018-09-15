@@ -138,8 +138,8 @@ class Customer {
 
     totalSpent(){
         let total = 0
-        this.customersMeals().map(function(meal){
-            total = meal.price++;
+        this.customersMeals().forEach(function(meal){
+            total = total + meal.price;
         });
         return total;
     }
