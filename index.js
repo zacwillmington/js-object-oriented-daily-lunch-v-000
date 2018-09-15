@@ -137,8 +137,11 @@ class Customer {
     }
 
     totalSpent(){
-
-        console.log(this.customersMeals());
+        total = 0
+        return this.customersMeals().map(function(meal){
+            total = meal.price++
+        });
+        return total;
     }
 
 }
