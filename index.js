@@ -129,7 +129,7 @@ class Customer {
 
     customersMeals(){
         const meals = this.deliveries().forEach(function(delivery){
-            delivery.meal();
+            return delivery.meal();
         });
         return meals;
     }
