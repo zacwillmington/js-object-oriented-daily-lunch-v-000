@@ -41,9 +41,9 @@ class Neighborhood {
     meals(){
         const allMeals = [...this.allMealsNotUnique()];
         const uniqueMeals = [...(new Set(allMeals.map(function({ id }){
-                                 return id ;
-                            }
-                        )))];
+                     return id ;
+            }
+        )))];
 
         return uniqueMeals;
     }
@@ -107,15 +107,10 @@ class Customer {
         // Find neighborhood
         const neighborhood = this.customerNeighborhood();
         //then call neighborhood.meals() will return the correct meals.
-        // console.log(neighborhood.meals());
         const mealz = []
         store.meals.forEach(function (meal1) {
-
             neighborhood.meals().filter(function(meal2){
-
                  if (meal1.id === meal2){
-        
-
                      mealz.push(meal1);
                  }
             });
