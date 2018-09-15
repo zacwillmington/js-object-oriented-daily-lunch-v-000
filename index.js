@@ -114,11 +114,8 @@ class Customer {
                      mealz.push(meal1);
                  }
             });
-        })
-        console.log(mealz);
+        });
         return mealz;
-        // const newInstance = new getCustomersMeals(this.customerNeighborhood().meals());
-        // console.log(newInstance.meals());
     }
 
 }
