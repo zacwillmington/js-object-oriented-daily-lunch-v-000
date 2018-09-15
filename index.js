@@ -110,12 +110,18 @@ class Customer {
         // console.log(neighborhood.meals());
         const mealz = []
         store.meals.forEach(function (meal1) {
+            debugger;
+
             neighborhood.meals().filter(function(meal2){
+
                  if (meal1.id === meal2.id){
+                     debugger;
+                     
                      mealz.push(meal);
                  }
             });
         });
+        debugger;
         return mealz;
         // const newInstance = new getCustomersMeals(this.customerNeighborhood().meals());
         // console.log(newInstance.meals());
