@@ -104,11 +104,10 @@ class Customer {
 
     meals() {
         // Find neighborhood
-        // console.log(this.customerNeighborhood());
         const neighborhood = this.customerNeighborhood();
-
+            
         //then call neighborhood.meals() will return the correct meals.
-
+        console.log(neighborhood.meals());
         // const newInstance = new getCustomersMeals(this.customerNeighborhood().meals());
         // console.log(newInstance.meals());
     }
