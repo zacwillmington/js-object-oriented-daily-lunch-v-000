@@ -69,10 +69,8 @@ class Meal {
 
 
     customers() {
-        return store.deliveries.filter(function (delivery){
-            // console.log(delivery);
-            // console.log(this);
-                return delivery.mealId === this.id;
+        return this.deliveries.filter(function (delivery){
+        
             }.bind(this)
         );
     }
@@ -105,9 +103,13 @@ class Customer {
     }
 
     meals() {
+        // Find neighborhood 
         // console.log(this.customerNeighborhood());
-        const newInstance = new getCustomersMeals(this.customerNeighborhood().meals());
-        console.log(newInstance.meals());
+        
+        //then call neighborhood.meals() will return the correct meals.
+        
+        // const newInstance = new getCustomersMeals(this.customerNeighborhood().meals());
+        // console.log(newInstance.meals());
     }
 
 }
