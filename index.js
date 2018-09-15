@@ -128,9 +128,10 @@ class Customer {
     }
 
     customersMeals(){
-        return this.deliveries().forEach(function(delivery){
+        const meals = this.deliveries().forEach(function(delivery){
             delivery.meal();
         });
+        return meals;
     }
 
     static totalSpent(){
